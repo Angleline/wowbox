@@ -1,0 +1,74 @@
+## Interface: 80200
+## Title: GridStatusDungeonDebuff
+## Notes: Complete Debuff List Up To BfA
+## Author: tptbk(Doadin-Malorne-US)
+## Version: 8.1.0.0
+## Grid Author: Pastamancer & Maia
+## Dependencies: Grid, GridStatusRaidDebuff
+## X-Curse-Project-Name: GridStatusDungeonDebuff
+## X-Curse-Project-ID: GridStatusDungeonDebuff
+
+BC/ManaTombs.lua
+BC/TheBlackMorass.lua
+
+Wrath/HallsofStone.lua
+Wrath/TheNexus.lua
+Wrath/UtgardeKeep.lua
+Wrath/UtgardePinnacle.lua
+
+Cata/ThroneoftheTides.lua
+Cata/BlackrockCaverns.lua
+Cata/TheStonecore.lua
+Cata/TheVortexPinnacle.lua
+Cata/LostCityoftheTol'vir.lua
+Cata/GrimBatol.lua
+Cata/HallsofOrigination.lua
+Cata/Zul'Aman.lua
+Cata/Zul'Gurub.lua
+Cata/EndTime.lua
+Cata/WellofEternity.lua
+Cata/HourofTwilight.lua
+
+MoP/ScarletHalls.lua
+MoP/ScarletMonastery.lua
+MoP/Scholomance.lua
+MoP/TempleoftheJadeSerpent.lua
+MoP/StormstoutBrewery.lua
+MoP/Mogu'shanPalace.lua
+MoP/Shado-PanMonastery.lua
+MoP/SiegeofNiuzaoTemple.lua
+MoP/GateoftheSettingSun.lua
+
+WoD/Auchindoun.lua
+WoD/BloodmaulSlagMines.lua
+WoD/GrimrailDepot.lua
+WoD/IronDocks.lua
+WoD/ShadowmoonBurialGrounds.lua
+WoD/Skyreach.lua
+WoD/TheEverbloom.lua
+WoD/UpperBlackrockSpire.lua
+
+Legion/BlackRookHold.lua
+Legion/CathedralofEternalNight.lua
+Legion/CourtofStars.lua
+Legion/DarkheartThicket.lua
+Legion/EyeofAzshara.lua
+Legion/HallsofValor.lua
+Legion/Karazhan.lua
+Legion/MawofSouls.lua
+Legion/Neltharion'sLair.lua
+Legion/SeatoftheTriumvirate.lua
+Legion/TheArcway.lua
+Legion/VaultoftheWardens.lua
+Legion/VioletHold.lua
+
+BfA/Atal'Dazar.lua
+BfA/Freehold.lua
+BfA/KingsRest.lua
+BfA/Shrine of the Storm.lua
+BfA/Siege of Boralus.lua
+BfA/Temple of Sethraliss.lua
+BfA/TheMOTHERLODE!!.lua
+BfA/TheUnderrot.lua
+BfA/TolDagor.lua
+BfA/WaycrestManor.lua

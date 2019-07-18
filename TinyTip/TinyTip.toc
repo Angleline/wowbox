@@ -1,0 +1,52 @@
+﻿## Interface: 80200
+## Title: [Duowan] TinyTip 
+## Notes: 格式化显示提示信息
+## Title-zhCN: [多玩] 鼠标信息 TinyTip 
+## Notes-zhCN: 格式化显示提示信息
+## Title-zhTW: [多玩] 鼠標信息 TinyTip 
+## Notes-zhTW: 格式化显示提示信息
+## X-DuowanAddon: 界面聊天
+## Dependencies: Duowan
+## X-Revision: Duowan
+## Author: M
+## Version: 8.2.0
+## SavedVariables: BigTipDB, TinyInspectDB, AzeriteTooltipDB
+## SavedVariablesPerCharacter: TinyTooltipCharacterDB
+
+libs\lib.xml
+core.lua
+config.lua
+general.lua
+anchor.lua
+
+unit.lua
+target.lua
+model.lua
+
+item.lua
+spell.lua
+quest.lua
+
+linkid.lua
+skinframes.lua
+
+#libs\UIDropDownMenu\UIDropDownMenu.xml
+locales\locales.xml
+options.lua
+
+TinyInspect\libs\lib.xml
+TinyInspect\locales\locales.xml
+TinyInspect\Options.lua
+TinyInspect\ItemBorder.lua
+TinyInspect\ItemLevel.lua
+TinyInspect\InspectCore.lua
+TinyInspect\InspectUnit.lua
+TinyInspect\InspectUnitStats.lua
+TinyInspect\InspectUnitGemAndEnchant.lua
+TinyInspect\InspectUnitSpecialization.lua
+TinyInspect\InspectParty.lua
+TinyInspect\InspectMouse.lua
+TinyInspect\InspectRaid.lua
+TinyInspect\PluginGreenState.lua
+
+AzeriteTooltip.lua

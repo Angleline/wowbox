@@ -1,0 +1,17 @@
+## Interface: 80200
+## Title: [Duowan] Combuctor Config
+## Notes: An options menu for Combuctor
+## Title-zhCN: [多玩] 背包整合 - 设置菜单
+## Notes-zhCN: 背包整合的设置菜单
+## Title-zhTW: [多玩] 背包整合 - 設置菜單
+## Notes-zhTW: 背包整合的設置菜單
+## Author: Tuller and Jaliborc (João Cardoso)
+## Dependencies: Combuctor
+## X-DuowanAddon: 商业物品
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+## Version: 8.1.0
+
+main.lua
+common\Wildpants_Config.xml

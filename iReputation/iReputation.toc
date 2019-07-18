@@ -1,0 +1,15 @@
+## Interface: 80200
+## Title: i|cffffffaaReputation|r
+## Title-zhCN: [多玩] 信息条 iReputation
+## Title-zhTW: [多玩] 資訊條 iReputation
+## Version: 8.1.3
+## Notes: The reputation display for your broker bar!
+## Author: grdn
+## SavedVariables: iReputationDB
+## OptionalDeps: Ace3, iLib
+## X-DuowanAddon: 界面聊天
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+includes.xml

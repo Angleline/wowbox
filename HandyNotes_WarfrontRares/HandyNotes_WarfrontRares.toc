@@ -1,0 +1,20 @@
+## Interface: 80200
+## Title:  [Duowan] HandyNotes_WarfrontRares
+## Title-zhCN: [多玩] 地图标记-战争前线宝藏模块
+## Title-zhTW: [多玩] 地圖標記-戰爭前線寶藏模組
+## Version: 0.5.0
+## Notes: Warfront Rares
+## OptionalDeps: Ace3
+## RequiredDeps: HandyNotes
+## X-Embeds: Ace3
+## SavedVariables: HandyNotesWarfrontRaresDB
+## X-DuowanAddon: 地图
+## Dependencies: HandyNotes
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+localization\enUS.lua
+localization\zhCN.lua
+localization\zhTW.lua
+
+HandyNotes_WarfrontRares.lua

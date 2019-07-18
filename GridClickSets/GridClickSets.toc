@@ -1,0 +1,28 @@
+## Interface: 80200
+## Title: GridClickSets
+## Notes: Set the clicking action for Grid buttons
+## Title-zhCN: [多玩] 点击施法
+## Notes-zhCN: 为系统团队头像和Grid提供点击施法支持
+## Title-zhTW: [多玩] 點擊施法
+## Notes-zhTW: 為系統團隊頭像和Grid提供點擊施法支持
+## Author: Warbaby
+## Version: 20180730
+## SavedVariablesPerCharacter: GridClickSetsForTalents
+## X-DuowanAddon: 团队副本
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+locale-enUS.lua
+locale-zhCN.lua
+locale-zhTW.lua
+
+..\Duowan\Acelibs\Ace3\LibStub\LibStub.lua
+..\Duowan\Acelibs\Ace3\AceConfig-3.0\AceConfig-3.0.xml
+
+DefaultClickSets.lua
+UIDropDownTooltipFunc.lua
+GridClickSetsFrame.xml
+SetupGrid.lua
+SetupGrid2.lua
+SetupCompactUnitFrame.lua

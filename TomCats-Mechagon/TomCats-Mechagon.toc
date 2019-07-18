@@ -1,0 +1,18 @@
+## Interface: 80200
+## Title: TomCat's Tours: Rares of Mechagon
+## Title-zhCN: [多玩] 地图标记-麦卡贡稀有模块(已删)
+## Title-zhTW: [多玩] 地圖標記-麥卡貢稀有模塊(已删)
+## Author: TomCat
+## X-Website: http://www.tomcatstours.com
+## Version: 1.0.11
+## DefaultState: enabled
+## SavedVariablesPerCharacter: TomCats_Mechagon_Character
+## OptionalDeps: TomCats,HandyNotes
+## X-Part-Of: TomCat's Tours:
+## X-Category: Achievements, Map, Miscellaneous
+## X-Localizations: enUS, zhCN, zhTW
+## X-DuowanAddon: 地图
+## Dependencies: Duowan
+## X-Revision: Duowan
+
+#Main.xml

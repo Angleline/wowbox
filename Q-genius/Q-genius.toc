@@ -1,0 +1,12 @@
+## Interface: 80200
+## Title: Q-genius
+## Title-zhCN: 任务达人
+## Title-zhCN: 任務達人
+## Author: DengSir
+## Version: 70100.01
+## LoadWith: Blizzard_AchievementUI
+## LoadOnDemand: 1
+## X-WoWBox-Ver: 1
+## X-Revision: Duowan
+
+#Load.xml

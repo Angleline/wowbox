@@ -1,0 +1,10 @@
+lightweight tag bd5a507266b46906baded9333394f019be22dac6 v8.2.0.2
+Author:	tbkizle <tbkizle@gmail.com>
+Date:	Sat Jul 13 20:48:53 2019 -0400
+
+commit bd5a507266b46906baded9333394f019be22dac6
+Author: tbkizle <tbkizle@gmail.com>
+Date:   Sat Jul 13 20:48:53 2019 -0400
+
+    Bump TOC
+

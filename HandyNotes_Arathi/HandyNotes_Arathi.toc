@@ -1,0 +1,22 @@
+## Interface: 80200
+## Title: [Duowan] HandyNotes_Arathi
+## Title-zhCN: [多玩] 地图标记-阿拉希高地稀有
+## Title-zhTW: [多玩] 地图标记-阿拉希高地稀有
+## Version: 0.1.5
+## Notes: Arathi Rares
+## OptionalDeps: Ace3
+## X-DuowanAddon: 地图
+## Dependencies: HandyNotes
+## X-Revision: Duowan
+## X-Embeds: Ace3
+## SavedVariables: HandyNotesArathiDB
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+localization\enUS.lua
+localization\zhCN.lua
+localization\zhTW.lua
+
+HandyNotes_Arathi.lua

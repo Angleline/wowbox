@@ -1,0 +1,205 @@
+commit 09fad76bfd1d7e9f5ceb5bb551f5cf25444e17fd
+Author: MysticalOS <mysticalosx@gmail.com>
+Date:   Tue Apr 16 20:59:15 2019 -0400
+
+    SetRevision updates
+
+commit 3229e05c07237395b07d3a26b5b03b7d3cc677de
+Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
+Date:   Tue Apr 16 16:28:59 2019 +0200
+
+    Create .travis.yml
+
+commit 6362c1ac4055a6850a48de3ecb1555ada11a4430
+Author: Benjamin Staneck <Stanzilla@users.noreply.github.com>
+Date:   Tue Apr 16 16:27:59 2019 +0200
+
+    Create README.md
+
+commit ba73af4df901e282a16baf2fbc624cc2445d5787
+Author: MysticalOS <MysticalOS@nomail.com>
+Date:   Sat Apr 13 23:38:18 2019 -0400
+
+    Revision change
+
+commit 9db819c886cf786411ed56beb2575d54dce043af
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Dec 11 04:57:30 2018 +0000
+
+    Bumped TOCs
+    Improved mode code in general.
+    Added support for BfA Keystones
+
+commit b226229e87e54e788eceff4e382d1794c1b314fb
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Jul 17 11:39:07 2018 +0000
+
+    8.0 Update
+
+commit 7dfb6825500e8443a0c91a50adfd99f127b485d8
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Aug 29 08:58:46 2017 +0000
+
+    Bump TOCs
+
+commit 9bc21af07bc0bdd6a393150be68b6ad7b26e7c35
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Mar 28 09:17:37 2017 +0000
+
+    Bump Toc
+
+commit 67de8f12783f6bba1964ae18b00b750d07a7bee1
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Sat Mar 18 09:06:13 2017 +0000
+
+    Add legion keystone items
+
+commit 61cb7ee72d9f60b71fa3bea2054f48a24fcc1f8e
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Wed Jan 4 07:15:37 2017 +0000
+
+    Just a test push
+
+commit 2f5207f1dd707abf31896658d4ccbeb7cce037f4
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Oct 25 15:54:20 2016 +0000
+
+    Bump TOC
+
+commit 7c45de2d8c286949a4b35280da261a665767dc19
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Jul 19 14:40:15 2016 +0000
+
+    toc
+
+commit 9660ebe1888eeb4487b4ad28edb70511e8043720
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Jun 23 07:34:50 2015 +0000
+
+    Bump toc
+
+commit 6e1c56e971f4ac8f89a3a6a678568aaaf849da5e
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Feb 24 10:03:56 2015 +0000
+
+    1 hour is close enough, I'm going to bed before realms go down. Bumping TOCs
+
+commit f09934f6823dc349bcdb4b56ea4b1af49e55cc52
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Wed Dec 17 21:34:22 2014 +0000
+
+    Added draenor keystones
+
+commit e6f948afce49a0cb071985cd77f2bcd8f07f2e19
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Oct 14 00:21:34 2014 +0000
+
+    ToC
+    use ogg sound paths in 6.0
+
+commit 91e3f61f4ca85095be3095522099aaa0afc415e0
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon Sep 9 18:31:13 2013 +0000
+
+    TOC
+
+commit 65a593483a1f90e7b670d0adcf8942aeb52667ec
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Jul 23 05:09:34 2013 +0000
+
+    ##Significant cpu optimizing (not that it was a cpu hog before but was certainly inefficient)
+    *No longer uses CLEU for anything
+    *Now uses RegisterUnitEvent instead of RegisterEvent since we only need player events for UNIT_SPELLCAST_SUCCEEDED
+    *Refactored some code to reduce redundancy
+    *No longer scans loot in instances since keystones can't be found there
+
+commit f3383bbb90e0e543d00d0e53fa76096b2b408ede
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon May 20 22:43:49 2013 +0000
+
+    Toc update to 50300
+
+commit 933efe2b48d87c3db785af1e342dde17487e4106
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Wed Mar 6 22:25:15 2013 +0000
+
+    Add mantid keystone
+
+commit b0c40c48733b44ba1f7a52e5b6d64e4e29f3a6b2
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Mar 5 02:26:36 2013 +0000
+
+    Update TOC
+
+commit efc3d468c82a37f99ceba9cab6b569efb0fdd37d
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Fri Jan 4 21:08:32 2013 +0000
+
+    Bump ToC
+
+commit ac229617bed64f18ef2161ef6b7d6220091b3f8d
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Sat Sep 29 12:52:33 2012 +0000
+
+    Add the 2 new keystones
+
+commit 89eca7688eb2083142851482dcb459885b0db654
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Aug 28 03:41:00 2012 +0000
+
+    Comment cleanup
+
+commit fb9a37754325933a42dbd22ea10b17cb63c84ef1
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Aug 28 03:40:01 2012 +0000
+
+    Bump ToC
+
+commit 2e6de1afe8f754bb944a891f29568f64e7e01f08
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon Mar 5 22:44:26 2012 +0000
+
+    Ignore events that aren't from player in Yogg box Alert
+
+commit a65bccdded426bb660853203bd4d061a6941b0a7
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Tue Nov 29 05:38:29 2011 +0000
+
+    Bump TOC to 40300
+
+commit e5cbed16e10323437acbb4ba7175b6ad619a1ed0
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon Nov 14 16:22:50 2011 +0000
+
+    Use correct soundfile for yogg box, oops
+
+commit c1bf8de590651e5951e8f046ab4f115cd162c06f
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon Nov 14 16:15:25 2011 +0000
+
+    Google translation local updates heh
+
+commit f1b53624edfef691fe6ab669f83ebabb3897f5fe
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon Nov 14 16:03:07 2011 +0000
+
+    Code improvement
+
+commit 26a56d129997ef84d22dbabaec19683c3f94b2be
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon Nov 14 16:00:08 2011 +0000
+
+    Add in support for yogg saron puzzle box
+
+commit e421d8083f9ba4d76b4c3b2051d17b95531c0c46
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon Nov 14 15:52:57 2011 +0000
+
+    Add pkgmeta
+
+commit 1489b3591dcfe145c47fdc34bfabdfbd30d551a9
+Author: Adam <MysticalOS@users.noreply.github.com>
+Date:   Mon Nov 14 15:50:01 2011 +0000
+
+    Switch project over to SVN
+

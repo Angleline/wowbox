@@ -1,0 +1,21 @@
+﻿## Interface: 80200
+## Author: cqwrteur
+## Title: cnbnpoints
+## Version: r7
+## SavedVariables: cnbnpoints_db
+## X-DuowanAddon: 团队副本
+## X-Revision: Duowan
+
+#@no-lib-strip@
+..\Duowan\Acelibs\Ace3\LibStub\LibStub.lua
+..\Duowan\Acelibs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.xml
+..\Duowan\Acelibs\Ace3\AceAddon-3.0\AceAddon-3.0.xml
+..\Duowan\Acelibs\Ace3\AceConsole-3.0\AceConsole-3.0.xml
+..\Duowan\Acelibs\Ace3\AceGUI-3.0\AceGUI-3.0.xml
+..\Duowan\Acelibs\Ace3\AceConfig-3.0\AceConfig-3.0.xml
+..\Duowan\Acelibs\Ace3\AceComm-3.0\AceComm-3.0.xml
+..\Duowan\Acelibs\Ace3\AceSerializer-3.0\AceSerializer-3.0.xml
+..\Duowan\Acelibs\Ace3\AceDB-3.0\AceDB-3.0.xml
+#@end-no-lib-strip@
+
+Init.lua

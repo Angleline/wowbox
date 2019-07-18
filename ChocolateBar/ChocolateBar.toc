@@ -1,0 +1,40 @@
+﻿## Interface: 80200
+## Title: ChocolateBar
+## Notes: A display for LibDataBroker-1.1
+## Title-zhCN: [多玩] 信息条
+## Title-zhTW: [多玩] 資訊條
+## Author: yess
+## Version: v3.2.3
+## X-Email: starfire@fantasymail.de
+## OptionalDeps: Ace3, LibSharedMedia-3.0, LibJostle-3.0
+## X-WoWI-ID: 12326
+## SavedVariables: ChocolateBarDB
+## X-DuowanAddon: 界面聊天
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+#@no-lib-strip@
+libs\libs.xml
+#@end-no-lib-strip@
+
+libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+localization\enUS.lua
+localization\zhCN.lua
+localization\zhTW.lua
+
+Core.lua
+Jostle.lua
+DragAndDrop.lua
+Chocolate.lua
+Bar.lua
+DropPoints.lua
+modules\Placeholder.lua
+modules\MoreChocolate.lua
+modules\CB_Time.lua
+Options.lua
+#@debug@
+# modules\MicroMenu\embedded.xml
+#@end-debug@
+

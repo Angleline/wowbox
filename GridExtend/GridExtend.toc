@@ -1,0 +1,153 @@
+## Interface: 80200
+## Title: [Duowan] Grid Extends
+## Title-zhCN: [多玩] 团队框架扩展
+## Title-zhTW: [多玩] 團隊框架擴展
+## Notes: A modular, lightweight, and screen-estate saving grid of party/raid unit frames.
+## Notes-zhCN: 小巧的轻量级模块化队伍/团队框架。
+## Notes-zhTW: 精簡的團隊框架功能
+## Version: 8.0.1.5
+## Author: Pastamancer, Maia
+## Credits: Greltok, Phanx, Jerry
+## X-Category: UnitFrame
+## X-Website: http://www.wowace.com/addons/grid/
+## X-DuowanAddon: 团队副本
+## Dependencies: Grid, Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+..\Duowan\Acelibs\LibBabble-3.0\LibBabble-Boss-3.0\LibBabble-Boss-3.0.lua
+
+CheckCompat.lua
+
+GridBuffIcons\localization.zhCN.lua
+GridBuffIcons\localization.zhTW.lua
+GridBuffIcons\GridBuffIcons.lua
+
+GridCustomLayouts\SecureGroupHeadersCopy.lua
+GridCustomLayouts\Locales.lua
+GridCustomLayouts\GridCustomLayouts.lua
+GridCustomLayouts\GridCustomLayoutsFrame.xml
+
+GridIndicatorsDynamic\Locales.lua
+GridIndicatorsDynamic\Options.lua
+GridIndicatorsDynamic\Texts.lua
+GridIndicatorsDynamic\Icons.lua
+GridIndicatorsDynamic\Box.lua
+
+GridManaBars\GMBLocale-enUS.lua
+GridManaBars\GMBLocale-zhCN.lua
+GridManaBars\GMBLocale-zhTW.lua
+GridManaBars\GridManaBar.lua
+GridManaBars\GridStatusMana.lua
+
+GridManaBars\GridBorderStyle\GBSLocal-enUS.lua
+GridManaBars\GridBorderStyle\GBSLocal-zhCN.lua
+GridManaBars\GridBorderStyle\GridBorderStyle.lua
+
+GridQuickHealth\GridQuickHealth.lua
+
+GridStatusEnemyTarget\GridStatusEnemyTarget.lua
+
+GridStatusRaidDebuff\Locale\Locale.xml
+GridStatusRaidDebuff\Core.lua
+
+
+GridStatusRD_BfA\Uldir.lua
+GridStatusRD_BfA\Azeroth.lua
+GridStatusRD_BfA\BattleofDazaralor.lua
+GridStatusRD_BfA\CrucibleofStorms.lua
+GridStatusRD_BfA\TheEternalPalace.lua
+
+GridStatusRD_Legion\AntorustheBurningThrone.lua
+GridStatusRD_Legion\BrokenIsles.lua
+GridStatusRD_Legion\EmeraldNightmare.lua
+GridStatusRD_Legion\Nighthold.lua
+GridStatusRD_Legion\TombofSargeras.lua
+GridStatusRD_Legion\TrialofValor.lua
+
+
+GridStatusRD_MoP\MogushanVaults.lua
+GridStatusRD_MoP\HeartOfFear.lua
+GridStatusRD_MoP\ShaofAnger.lua
+GridStatusRD_MoP\TerraceofEndlessSpring.lua
+GridStatusRD_MoP\ThroneofThunder.lua
+GridStatusRD_MoP\SiegeofOrgrimmar.lua
+
+
+GridStatusRD_WoD\BlackrockFoundry.lua
+GridStatusRD_WoD\Highmaul.lua
+GridStatusRD_WoD\HellfireCitadel.lua
+
+
+GridStatusDungeonDebuff\BC\ManaTombs.lua
+GridStatusDungeonDebuff\BC\TheBlackMorass.lua
+
+GridStatusDungeonDebuff\Wrath\HallsofStone.lua
+GridStatusDungeonDebuff\Wrath\TheNexus.lua
+GridStatusDungeonDebuff\Wrath\UtgardeKeep.lua
+GridStatusDungeonDebuff\Wrath\UtgardePinnacle.lua
+
+GridStatusDungeonDebuff\Cata\ThroneoftheTides.lua
+GridStatusDungeonDebuff\Cata\BlackrockCaverns.lua
+GridStatusDungeonDebuff\Cata\TheStonecore.lua
+GridStatusDungeonDebuff\Cata\TheVortexPinnacle.lua
+GridStatusDungeonDebuff\Cata\LostCityoftheTol'vir.lua
+GridStatusDungeonDebuff\Cata\GrimBatol.lua
+GridStatusDungeonDebuff\Cata\HallsofOrigination.lua
+GridStatusDungeonDebuff\Cata\Zul'Aman.lua
+GridStatusDungeonDebuff\Cata\Zul'Gurub.lua
+GridStatusDungeonDebuff\Cata\EndTime.lua
+GridStatusDungeonDebuff\Cata\WellofEternity.lua
+GridStatusDungeonDebuff\Cata\HourofTwilight.lua
+
+GridStatusDungeonDebuff\MoP\ScarletHalls.lua
+GridStatusDungeonDebuff\MoP\ScarletMonastery.lua
+GridStatusDungeonDebuff\MoP\Scholomance.lua
+GridStatusDungeonDebuff\MoP\TempleoftheJadeSerpent.lua
+GridStatusDungeonDebuff\MoP\StormstoutBrewery.lua
+GridStatusDungeonDebuff\MoP\Mogu'shanPalace.lua
+GridStatusDungeonDebuff\MoP\Shado-PanMonastery.lua
+GridStatusDungeonDebuff\MoP\SiegeofNiuzaoTemple.lua
+GridStatusDungeonDebuff\MoP\GateoftheSettingSun.lua
+
+GridStatusDungeonDebuff\WoD\Auchindoun.lua
+GridStatusDungeonDebuff\WoD\BloodmaulSlagMines.lua
+GridStatusDungeonDebuff\WoD\GrimrailDepot.lua
+GridStatusDungeonDebuff\WoD\IronDocks.lua
+GridStatusDungeonDebuff\WoD\ShadowmoonBurialGrounds.lua
+GridStatusDungeonDebuff\WoD\Skyreach.lua
+GridStatusDungeonDebuff\WoD\TheEverbloom.lua
+GridStatusDungeonDebuff\WoD\UpperBlackrockSpire.lua
+
+GridStatusDungeonDebuff\Legion\BlackRookHold.lua
+GridStatusDungeonDebuff\Legion\CathedralofEternalNight.lua
+GridStatusDungeonDebuff\Legion\CourtofStars.lua
+GridStatusDungeonDebuff\Legion\DarkheartThicket.lua
+GridStatusDungeonDebuff\Legion\EyeofAzshara.lua
+GridStatusDungeonDebuff\Legion\HallsofValor.lua
+GridStatusDungeonDebuff\Legion\Karazhan.lua
+GridStatusDungeonDebuff\Legion\MawofSouls.lua
+GridStatusDungeonDebuff\Legion\Neltharion'sLair.lua
+GridStatusDungeonDebuff\Legion\SeatoftheTriumvirate.lua
+GridStatusDungeonDebuff\Legion\TheArcway.lua
+GridStatusDungeonDebuff\Legion\VaultoftheWardens.lua
+GridStatusDungeonDebuff\Legion\VioletHold.lua
+
+GridStatusDungeonDebuff\BfA\Atal'Dazar.lua
+GridStatusDungeonDebuff\BfA\Freehold.lua
+GridStatusDungeonDebuff\BfA\KingsRest.lua
+GridStatusDungeonDebuff\BfA\Shrine of the Storm.lua
+GridStatusDungeonDebuff\BfA\Siege of Boralus.lua
+GridStatusDungeonDebuff\BfA\Temple of Sethraliss.lua
+GridStatusDungeonDebuff\BfA\TheMOTHERLODE!!.lua
+GridStatusDungeonDebuff\BfA\TheUnderrot.lua
+GridStatusDungeonDebuff\BfA\TolDagor.lua
+GridStatusDungeonDebuff\BfA\WaycrestManor.lua
+
+GridStatusTankCooldown\SpellsWidget.lua
+GridStatusTankCooldown\GridStatusTankCooldown.lua
+
+GridSideIndicators\GridSideIndicatorsLocale-enUS.lua
+GridSideIndicators\GridSideIndicatorsLocale-zhTW.lua
+GridSideIndicators\GridSideIndicatorsLocale-zhCN.lua
+GridSideIndicators\GridSideIndicators.lua

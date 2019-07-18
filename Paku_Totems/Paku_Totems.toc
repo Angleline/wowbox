@@ -1,0 +1,26 @@
+## Interface: 80200
+## Title: Pa'ku Totems
+## Title-zhCN: [多玩]帕库图腾插件
+## Title-zhTW: [多玩]帕庫圖騰插件
+## Author: jaxdahl
+## Version: 1.32
+## X-DuowanAddon: 多玩界面
+## Dependencies: Duowan
+## X-Revision: Duowan
+## Notes: Show Pa'ku totem positions on the map and destinations in the tooltip on mouseover.
+
+..\Duowan\Acelibs\Ace3\LibStub\LibStub.lua
+..\Duowan\Acelibs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.lua
+
+..\Duowan\lib\HereBeDragons\HereBeDragons-2.0.lua
+..\Duowan\lib\HereBeDragons\HereBeDragons-Pins-2.0.lua
+
+..\Duowan\Acelibs\Ace3\AceAddon-3.0\AceAddon-3.0.xml
+..\Duowan\Acelibs\Ace3\AceEvent-3.0\AceEvent-3.0.xml
+..\Duowan\Acelibs\Ace3\AceLocale-3.0\AceLocale-3.0.xml
+
+Locales\enUS.lua
+Locales\zhCN.lua
+Locales\zhTW.lua
+
+Paku_Totems.lua

@@ -1,0 +1,15 @@
+## Interface: 80200
+## Title: i|cffffffaaGuild|r
+## Title-zhCN: [多玩] 信息条 iGuild
+## Title-zhTW: [多玩] 資訊條 iGuild
+## Version: 8.1.0
+## Notes: The dynamic Guild Display for your LDB!
+## Author: grdn
+## SavedVariables: iGuildDB
+## OptionalDeps: Ace3, iLib, LibCrayon-3.0, LibDialog-1.0, LibTourist-3.0
+## X-DuowanAddon: 界面聊天
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+includes.xml

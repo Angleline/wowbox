@@ -1,0 +1,48 @@
+## Interface: 80200
+## Title: DuowanGarrison
+## Title-zhCN: [多玩] 要塞增强包
+## Title-zhTW: [多玩] 要塞增強包
+## Notes-zhCN: |cff00ff00Mapster|r|n|cffbc8f8f修改并优化追随者任务面板。|r
+## Notes-zhTW: |cff00ff00Mapster|r|n|cffbc8f8f修改并優化追隨者任務面板。|r
+## Author: cadcamzy
+## Version: 0.115
+## LoadWith: Blizzard_GarrisonUI, Blizzard_OrderHallUI
+## RequiredDeps: Blizzard_GarrisonUI, Blizzard_OrderHallUI
+## SavedVariables: MasterPlanAG, SV_GarrisonMissionManager, IPMDB
+## SavedVariablesPerCharacter: MasterPlanPC, SVPC_GarrisonMissionManager
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+Libs/Evie.lua
+Libs/AltGameTooltip.xml
+Libs/Reframe.lua
+PlanA/PlanA.lua
+Locale.lua
+Mark-50.lua
+GarrisonAPI-Data.lua
+GarrisonAPI.lua
+MasterPlan.lua
+MissionsUI.lua
+GarrisonMissions.lua
+GarrisonFollowers.lua
+FollowerSummary.lua
+ShipMoI.lua
+LandingCache.lua
+LandingAlts.lua
+
+LazyWidget.lua
+C_Garrison_cache.lua
+FindBestFollowersForMission.lua
+GarrisonMissionManager.lua
+MissionUI_Shared.lua
+MissionUI_Shared_UpgradeItems.lua
+MissionUI_Garrison.lua
+MissionUI_Shipyard.lua
+MissionUI_OrderHall.lua
+MissionUI_BFA.lua
+GarrisonBuilding.lua
+Broker.lua
+
+MoreRewardsFormOrderHall.lua
+InProgressMissions.lua

@@ -1,0 +1,14 @@
+## Interface: 80200
+## Title: GridStatusRaidDebuff(BfA)
+## Notes: Debuff List for Battle for Azeroth
+## Author: tptbk(Doadin-Malorne-US)
+## Version: 8.2.0.2
+## Grid Author: Pastamancer & Maia
+## Dependencies: Grid, GridStatusRaidDebuff
+
+CheckCompat.lua
+Uldir.lua
+Azeroth.lua
+BattleofDazaralor.lua
+CrucibleofStorms.lua
+TheEternalPalace.lua

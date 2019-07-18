@@ -1,0 +1,14 @@
+## Interface: 80200
+## Title: i|cffffffaaCPU|r
+## Title-zhCN: [多玩] 信息条 iCPU
+## Title-zhTW: [多玩] 資訊條 iCPU
+## Version: 8.0.3
+## Notes: Displayes performance informations on your broker bar!
+## Author: grdn
+## SavedVariables: iCPUDB
+## X-DuowanAddon: 界面聊天
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+includes.xml

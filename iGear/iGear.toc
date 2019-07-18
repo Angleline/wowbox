@@ -1,0 +1,14 @@
+## Interface: 80200
+## Title: i|cffffffaaGear|r
+## Title-zhCN: [多玩] 信息条 iGear
+## Title-zhTW: [多玩] 資訊條 iGear
+## Version: 8.0.3
+## Notes: Not just a durability display broker!
+## Author: grdn
+## SavedVariables: iGearDB
+## X-DuowanAddon: 界面聊天
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+includes.xml

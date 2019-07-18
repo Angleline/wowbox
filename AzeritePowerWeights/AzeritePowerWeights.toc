@@ -1,0 +1,22 @@
+## Interface: 80200
+## Author: Sanex (Arathor EU)
+## Title: AzeritePowerWeights
+## Title-zhCN: [多玩]特质评分AzeritePowerWeights
+## Title-zhTW: [多玩]特質評分 AzeritePowerWeights
+## X-Revision: Duowan
+## Version: 8.2.2
+## Notes: Helps you pick the best Azerite powers on your gear for your class and spec.
+## RequiredDeps:
+## SavedVariables: AzeritePowerWeightsDB
+
+#@no-lib-strip@
+..\Duowan\Acelibs\Ace3\LibStub\LibStub.lua
+..\Duowan\Acelibs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.lua
+..\Duowan\Acelibs\Ace3\AceGUI-3.0\AceGUI-3.0.xml
+..\Duowan\Acelibs\Ace3\AceConfig-3.0\AceConfig-3.0.xml
+#@end-no-lib-strip@
+
+Strings.lua
+Data.lua
+UI.lua
+Core.lua

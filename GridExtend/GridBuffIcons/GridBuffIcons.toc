@@ -1,0 +1,13 @@
+## Interface: 80200
+## Title: GridBuffIcons
+
+## Author: warbaby @ 爱不易
+## Grid Author: Pastamancer & Maia
+## Dependencies: Grid
+
+localization.zhCN.lua
+localization.zhTW.lua
+GridBuffIcons.lua
+
+## Title: |cff880303[爱不易]|r Grid 状态图标
+## X-Vendor: AbyUI

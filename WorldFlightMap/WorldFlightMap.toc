@@ -1,0 +1,12 @@
+## Interface: 80200
+## Title: WorldFlightMap
+## Title-zhCN: [多玩] 世界飞行地图
+## Title-zhTW: [多玩] 世界飛行地圖
+## Notes: Replaces the regular flight map with the world map
+## Author: Semlar
+## Version: 8.1.0.0
+## Dependencies: Blizzard_FlightMap
+## X-Revision: Duowan
+
+LinePool.lua
+WorldFlightMap.lua

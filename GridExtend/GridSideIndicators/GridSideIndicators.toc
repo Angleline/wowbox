@@ -1,0 +1,21 @@
+## Interface: 80200
+## Title: GridSideIndicators
+## Notes: Adds indicators to the sides of Grid frames.
+## Notes-zhTW: [Grid] 在 Grid 框架邊緣加入狀態指示器。
+## Notes-zhCN: [Grid] 在 Grid 框架边缘加入状态指示器。
+## Author: Goeb & Baps & Dratr
+## Version: 8.1.5
+## Grid Author: Pastamancer & Maia
+## X-Website: http://www.wowace.com/addons/grid-side-indicators/
+## X-Category: UnitFrame
+## Dependencies: Grid
+## X-Curse-Packaged-Version: v8.0.0
+## X-Curse-Project-Name: GridSideIndicators
+## X-Curse-Project-ID: grid-side-indicators
+## X-Curse-Repository-ID: wow/grid-side-indicators/mainline
+
+GridSideIndicatorsLocale-enUS.lua
+GridSideIndicatorsLocale-zhTW.lua
+GridSideIndicatorsLocale-zhCN.lua
+
+GridSideIndicators.lua

@@ -1,0 +1,41 @@
+## Interface: 80200
+## Title: World Quest Tracker
+## Title-zhCN: [多玩] 世界任务追踪
+## Title-zhTW: [多玩] 世界任務追蹤
+## Notes: Make more easy to see world quests
+## SavedVariables: WQTrackerDB
+## SavedVariablesPerCharacter: WQTrackerDBChr
+## Dependencies: Duowan
+## X-Revision: Duowan
+## Version: v8.2.0.375
+## LoadOnDemand: 1
+## X-DuowanAddon: 任务
+
+
+#@no-lib-strip@
+libs\libs.xml
+#@end-no-lib-strip@
+
+locales\enUS.lua
+locales\zhCN.lua
+locales\zhTW.lua
+
+WorldQuestTracker.xml
+
+WorldQuestTracker_Initialize.lua
+WorldQuestTracker_IDs.lua
+
+WorldQuestTracker.lua
+
+WorldQuestTracker_Core.lua
+
+WorldQuestTracker_FrameAPI.lua
+WorldQuestTracker_MapAPI.lua
+WorldQuestTracker_GroupFinder.lua
+WorldQuestTracker_RareFinder.lua
+WorldQuestTracker_ZoneMap.lua
+WorldQuestTracker_WorldMap.lua
+WorldQuestTracker_Tracker.lua
+WorldQuestTracker_Taxi.lua
+
+WorldQuestTrackerMixin.xml

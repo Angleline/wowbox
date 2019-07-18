@@ -1,0 +1,9 @@
+## Interface: 80200
+## Title: WorldFlightMap_Loader
+## Title-zhCN: [多玩] 世界飞行地图载入器
+## Title-zhTW: [多玩] 世界飛行地圖載入器
+## Notes: Required to load WorldFlightMap before other flight map addons
+## Author: Semlar
+## Version: 8.1.0.0
+## Dependencies: Blizzard_FlightMap, WorldFlightMap
+## X-Revision: Duowan

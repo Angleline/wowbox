@@ -1,0 +1,35 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<Script file="..\Duowan\Acelibs\LibDataBroker-1.1\LibDataBroker-1.1.lua"/>
+
+<!--@non-debug@-->
+<Include file="..\Duowan\Acelibs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.xml"/>
+<Script file="..\Duowan\Acelibs\Ace3\LibStub\Libstub.lua"/>
+
+<Include file="..\Duowan\Acelibs\lib\iLib\lib.xml"/>
+<Include file="..\Duowan\Acelibs\lib\LibCrayon-3.0\lib.xml"/>
+<Include file="Libs\LibDialog-1.0\lib.xml"/>
+
+<Include file="..\Duowan\Acelibs\AceBucket-3.0\AceBucket-3.0.xml"/>
+<Include file="..\Duowan\Acelibs\AceGUI-3.0\AceGUI-3.0.xml"/>
+<Include file="..\Duowan\Acelibs\AceConfig-3.0\AceConfig-3.0.xml"/>
+<Include file="..\Duowan\Acelibs\AceDB-3.0\AceDB-3.0.xml"/>
+<Include file="..\Duowan\Acelibs\AceEvent-3.0\AceEvent-3.0.xml"/>
+<Include file="..\Duowan\Acelibs\AceLocale-3.0\AceLocale-3.0.xml"/>
+<Include file="..\Duowan\Acelibs\AceTimer-3.0\AceTimer-3.0.xml"/>
+
+<Script file="..\Duowan\lib\HereBeDragons\HereBeDragons-2.0.lua"/>
+<Script file="Libs\LibTourist-3.0\LibTourist-3.0.lua"/>
+<!--@end-non-debug@-->
+
+
+<Include file="Locales\Locales.xml"/>
+
+<Script file="iGuild.lua"/>
+<Script file="Columns.lua"/>
+<Script file="Config.lua"/>
+
+
+
+</Ui>

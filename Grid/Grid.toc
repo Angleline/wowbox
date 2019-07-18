@@ -1,0 +1,81 @@
+## Interface: 80200
+## Title: [Duowan] Grid
+## Title-zhCN: [多玩] 团队框架 Grid
+## Title-zhTW: [多玩] 團隊框架 Grid
+## Notes: A modular, lightweight, and screen-estate saving grid of party/raid unit frames.
+## Notes-zhCN: 小巧的轻量级模块化队伍/团队框架。
+## Notes-zhTW: 精簡的團隊框架功能
+## Author: Phanx, Pastamancer, Maia
+## X-Credits: Greltok, Jerry, jlam
+## X-Copyright: Copyright (c) 2006-2013 Pastamancer, Phanx. All rights reserved.
+## X-License: See the accompanying LICENSE file for details.
+## X-CompatibleLocales: enUS, deDE, esES, esMX, frFR, itIT, koKR, ptBR, ruRU, zhCN, zhTW
+## X-Localizations: enUS, deDE, esES, esMX, frFR, koKR, ptBR, ruRU, zhCN, zhTW
+## X-Website: http://www.wowace.com/addons/grid/
+## X-AceForum: 2525
+## X-WoWI-ID: 5747
+## X-DuowanAddon: 团队副本
+## SavedVariables: GridDB
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+..\Duowan\Acelibs\Ace3\LibStub\LibStub.lua
+..\Duowan\Acelibs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.lua
+..\Duowan\Acelibs\Ace3\AceAddon-3.0\AceAddon-3.0.lua
+..\Duowan\Acelibs\Ace3\AceBucket-3.0\AceBucket-3.0.lua
+..\Duowan\Acelibs\Ace3\AceGUI-3.0\AceGUI-3.0.xml
+..\Duowan\Acelibs\Ace3\AceConfig-3.0\AceConfigRegistry-3.0\AceConfigRegistry-3.0.lua
+..\Duowan\Acelibs\Ace3\AceConfig-3.0\AceConfigDialog-3.0\AceConfigDialog-3.0.lua
+..\Duowan\Acelibs\Ace3\AceConsole-3.0\AceConsole-3.0.lua
+..\Duowan\Acelibs\Ace3\AceConfig-3.0\AceConfigCmd-3.0\AceConfigCmd-3.0.lua
+..\Duowan\Acelibs\Ace3\AceDB-3.0\AceDB-3.0.lua
+..\Duowan\Acelibs\Ace3\AceDBOptions-3.0\AceDBOptions-3.0.lua
+..\Duowan\Acelibs\Ace3\AceEvent-3.0\AceEvent-3.0.lua
+..\Duowan\Acelibs\Ace3\AceHook-3.0\AceHook-3.0.lua
+..\Duowan\Acelibs\Ace3\AceTimer-3.0\AceTimer-3.0.lua
+..\Duowan\Acelibs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+..\Duowan\Acelibs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+..\Duowan\Acelibs\LibDualSpec-1.0\LibDualSpec-1.0.lua
+Libs\LibResInfo-1.0\LibResInfo-1.0.lua
+..\Duowan\Acelibs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua
+..\Duowan\Acelibs\Ace3\AceGUI-3.0-SharedMediaWidgets\widget.xml
+..\Duowan\Acelibs\UTF8\utf8.lua
+
+Locales\Locale-es.lua
+Locales\Locale-zhCN.lua
+Locales\Locale-zhTW.lua
+
+Core.lua
+Roster.lua
+Layout.lua
+Layouts.lua
+Frame.lua
+Status.lua
+Help.lua
+
+Indicators\Alpha.lua
+Indicators\Bar.lua
+Indicators\Border.lua
+Indicators\Corner.lua
+Indicators\HealingBar.lua
+Indicators\Icon.lua
+Indicators\Text.lua
+
+Statuses\Absorbs.lua
+Statuses\Aggro.lua
+Statuses\Auras.lua
+Statuses\Group.lua
+Statuses\Heals.lua
+Statuses\Health.lua
+Statuses\Mana.lua
+Statuses\Mouseover.lua
+Statuses\Name.lua
+Statuses\RaidIcon.lua
+Statuses\Range.lua
+Statuses\ReadyCheck.lua
+Statuses\Resurrect.lua
+Statuses\Role.lua
+Statuses\Stagger.lua
+Statuses\Target.lua
+Statuses\Vehicle.lua

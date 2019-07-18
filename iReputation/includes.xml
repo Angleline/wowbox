@@ -1,0 +1,23 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<Script file="..\Duowan\Acelibs\LibDataBroker-1.1\LibDataBroker-1.1.lua"/>
+
+<!--@non-debug@-->
+<Include file="..\Duowan\Acelibs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.xml"/>
+<Script file="..\Duowan\Acelibs\Ace3\LibStub\Libstub.lua"/>
+
+<Include file="..\Duowan\Acelibs\lib\iLib\lib.xml"/>
+
+<Include file="..\Duowan\Acelibs\Ace3\AceDB-3.0\AceDB-3.0.xml"/>
+<Include file="..\Duowan\Acelibs\Ace3\AceEvent-3.0\AceEvent-3.0.xml"/>
+<Include file="..\Duowan\Acelibs\Ace3\AceLocale-3.0\AceLocale-3.0.xml"/>
+<!--@end-non-debug@-->
+
+
+<Include file="Locales\Locales.xml"/>
+
+<Script file="iReputation.lua"/>
+
+
+</Ui>

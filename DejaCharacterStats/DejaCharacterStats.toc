@@ -1,0 +1,28 @@
+﻿## Interface: 80200
+## Version: 800b122
+## Title: DejaCharacterStats
+## Title-zhCN: [多玩] Deja 角色详细属性
+## Notes-zhCN: 在角色面板上显示详细的属性，类似旧版，/dcstats config:打开配置界面。
+## Authors: Dejablue, Kakjens, loudsoul
+## Notes: Dejablue's improved character stats panel view.
+## SavedVariables: DejaCharacterStatsDB
+## SavedVariables: DCS_ClassSpecDB
+## SavedVariablesPerCharacter: DejaCharacterStatsDBPC
+## X-DuowanAddon: 多玩界面
+## Dependencies: Duowan
+## X-Revision: Duowan
+
+Localization\localization.core.lua
+Localization\localization.enUS.lua
+Localization\localization.zhCN.lua
+Localization\localization.zhTW.lua
+
+DejaCharacterStats.lua
+DCSTables.lua
+DCSLayouts.lua
+DCSExpand.lua
+DCSDecimals.lua
+DCSDuraRepair.lua
+
+DCSAbout.lua
+DCSAprilFools.lua

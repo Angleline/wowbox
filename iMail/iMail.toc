@@ -1,0 +1,13 @@
+## Interface: 80200
+## Title: i|cffffffaaMail|r
+## Title-zhCN: [多玩] 信息条 iMail
+## Title-zhTW: [多玩] 資訊條 iMail
+## Version: 8.0.3
+## Notes: LDB replacement for your minimap icon.
+## Author: grdn
+## X-DuowanAddon: 界面聊天
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+includes.xml

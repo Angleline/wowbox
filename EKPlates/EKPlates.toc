@@ -1,0 +1,20 @@
+﻿## Interface: 80200
+## Title: |cff00ffffEK|rPlates
+## Title-zhCN: [多玩] |cff00ffffEK|rPlates姓名版增强
+## Notes-zhCN: 在姓名版上显示你和你宠物施放的Buff/Debuff,目标指引等.
+## Version: B3.2a
+## Author: EK (Linodas@Illidan-US)
+## Notes: Nameplates. Credits to Paopao and Dawn.
+
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+## SavedVariables: QuestPlateSettings
+## X-Credits: Paopao, Dawn, Siweia, Rubgrsch
+
+EKPlates.xml
+Config.lua
+EKPlates.lua
+
+semlib\semlib.xml
+QuestPlates.lua

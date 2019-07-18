@@ -1,0 +1,48 @@
+## Interface: 80200
+## Title: [Duowan] Mapster
+## Notes: Simple Map Mod
+## Title-zhCN: [多玩] 地图增强
+## Notes-zhCN: 简单实用的地图模块
+## Title-zhTW: [多玩] 地圖增強
+## Notes-zhTW: 簡單實用的地圖模塊
+## Author: Nevcairiel
+## SavedVariables: MapsterDB
+## X-Category: Map
+## Version: 1.8.3
+## X-License: All rights reserved.
+## X-Curse-Project-ID: 14376
+## X-WoWI-ID: 8306
+## Dependencies: Duowan
+## X-Revision: Duowan
+## LoadOnDemand: 1
+
+## OptionalDeps: Ace3
+
+#@no-lib-strip@
+..\Duowan\Acelibs\Ace3\LibStub\LibStub.lua
+..\Duowan\Acelibs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.xml
+
+..\Duowan\Acelibs\Ace3\AceAddon-3.0\AceAddon-3.0.xml
+..\Duowan\Acelibs\Ace3\AceEvent-3.0\AceEvent-3.0.xml
+..\Duowan\Acelibs\Ace3\AceHook-3.0\AceHook-3.0.xml
+..\Duowan\Acelibs\Ace3\AceDB-3.0\AceDB-3.0.xml
+..\Duowan\Acelibs\Ace3\AceDBOptions-3.0\AceDBOptions-3.0.xml
+..\Duowan\Acelibs\Ace3\AceLocale-3.0\AceLocale-3.0.xml
+
+..\Duowan\Acelibs\Ace3\AceGUI-3.0\AceGUI-3.0.xml
+..\Duowan\Acelibs\Ace3\AceConsole-3.0\AceConsole-3.0.xml
+..\Duowan\Acelibs\Ace3\AceConfig-3.0\AceConfig-3.0.xml
+
+..\Duowan\Acelibs\LibWindow-1.1\LibWindow-1.1.lua
+#@end-no-lib-strip@
+
+Locale\locale.xml
+
+Mapster.lua
+Config.lua
+
+Coords.lua
+# GroupIcons.lua
+# BattleMap.lua
+FogClear.lua
+Scaling.lua

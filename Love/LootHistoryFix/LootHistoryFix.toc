@@ -1,0 +1,8 @@
+## Interface: 80200
+## Title: Loot History Fix
+## Notes: Fixes some bugs in the default Loot History
+## Author: eXochron
+## Version: 1.0
+
+ButtonLevels.lua
+LootAssignment.lua

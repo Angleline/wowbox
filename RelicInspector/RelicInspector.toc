@@ -1,0 +1,24 @@
+﻿## Interface: 80200
+## Title: [Duowan] RelicInspector
+## Notes: Displays artifact weapon relics in the tooltip
+## Title-zhCN: [多玩] 圣物观察 
+## Notes-zhCN: 强化圣物信息
+## Title-zhTW: [多玩] 聖物觀察 
+## Notes-zhTW: 強化聖物資訊
+## Author: Thoralie
+## Version: 3.0.0.
+## SavedVariables: RelicInspectorDB
+## SavedVariablesPerCharacter: RelicInspectorCharDB
+## X-DuowanAddon: 界面聊天
+## Dependencies: Duowan
+## X-Revision: Duowan
+
+..\Duowan\Acelibs\Ace3\LibStub\LibStub.lua
+..\Duowan\Acelibs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.xml
+..\Duowan\Acelibs\Ace3\AceGUI-3.0\AceGUI-3.0.xml
+..\Duowan\Acelibs\Ace3\AceConfig-3.0\AceConfig-3.0.xml
+..\Duowan\Acelibs\Ace3\AceDB-3.0\AceDB-3.0.xml
+..\Duowan\Acelibs\Ace3\AceDBOptions-3.0\AceDBOptions-3.0.xml
+
+ArtifactData.lua
+RelicInspector.lua
