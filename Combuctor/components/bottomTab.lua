@@ -6,7 +6,7 @@
 local ADDON, Addon = ...
 local BottomTab = Addon:NewClass('BottomTab', 'Button')
 BottomTab.ID = 1
-BottomTab.activeId = -1
+
 
 function BottomTab:New(parent)
 	local b = self:Bind(CreateFrame('Button', ADDON .. 'BottomTab' .. self.ID, parent, ADDON..'BottomTabTemplate'))
@@ -25,7 +25,6 @@ end
 
 function BottomTab:OnClick()
 	self:GetFrame().subrule = self.id
-	BottomTab.activeId = self.id
 	self:SendFrameSignal('SUBRULE_CHANGED', self.id)
 	self:SendFrameSignal('FILTERS_CHANGED')
 end

@@ -1,5 +1,5 @@
 ﻿## Interface: 80200
-## X-Min-Interface: 50001
+## X-Min-Interface: 80200
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0PvP|r
 ## Title-deDE:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0PvP|r
 ## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0PvP|r
@@ -38,23 +38,27 @@
 ## X-DBM-Mod-Name-esES: JcJ
 ## X-DBM-Mod-Name-esMX: JcJ
 ## X-DBM-Mod-Name-ptBR: JxJ
-## X-DBM-Mod-MapID: 529,489,30,628,566,998,726,727,761,1105,1431,1681
+## X-DBM-Mod-MapID: 529,489,30,628,566,998,726,727,761,1105,1431,1681,2106,2107,2177
 ## X-DBM-Mod-Sort: 599
-## X-DBM-Mod-MinCoreRevision: 12473
+## X-Curse-Project-ID: 61882
+## Version: be264cd
 ## X-DuowanAddon: 团队副本
 ## X-Revision: Duowan
+
 localization.en.lua
-localization.tw.lua
 localization.cn.lua
+localization.tw.lua
+
 Battlegrounds\Battlegrounds.lua
 Battlegrounds\Alterac.lua
 Battlegrounds\Arathi.lua
 Battlegrounds\Deepwind.lua
+Battlegrounds\EyeofTheStorm.lua
 Battlegrounds\Gilneas.lua
-Battlegrounds\EyeOfTheStorm.lua
 Battlegrounds\IsleOfConquest.lua
 Battlegrounds\SilvershardMines.lua
 Battlegrounds\TempleOfKotmogu.lua
 Battlegrounds\TwinPeaks.lua
 Battlegrounds\Warsong.lua
+
 Arenas\Arenas.lua

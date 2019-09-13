@@ -14,7 +14,7 @@
 ## Notes-koKR: LegionInvasionTimer|1을;를; 설정하는 옵션입니다.
 ## Notes-ptBR: LegionInvasionTimer Opções de Configuração.
 ## Notes-ruRU: LegionInvasionTimer параметры настроек.
-## Version: v8.2.2
+## Version: v8.2.4
 ## LoadOnDemand: 1
 ## Dependencies: LegionInvasionTimer
 ## Dependencies: Duowan

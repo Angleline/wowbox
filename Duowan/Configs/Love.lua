@@ -31,6 +31,7 @@ if (GetLocale() == "zhCN") then
 	DecorateTooltip = "钥石助手"
 	CrucibleWeight = "熔炉圣物比较"
 	DW_OrderHallCommandBar = "隐藏职业大厅命令条"
+	MTG_TOGGLE = "鱼人兑换"
 elseif (GetLocale() == "zhTW") then
 	LOVE_MOD_TITLE = "便捷工具";
 	LOVE_MOD_FOCUS_ENABLE = "允許快速設置焦點";
@@ -61,6 +62,7 @@ elseif (GetLocale() == "zhTW") then
 	DecorateTooltip = "鑰石助手"
 	CrucibleWeight = "熔炉圣物比较"
 	DW_OrderHallCommandBar = "隱藏職業大廳命令條"
+	MTG_TOGGLE = "魚人兌換"
 else
 	LOVE_MOD_TITLE = "便捷工具";
 	LOVE_MOD_FOCUS_ENABLE = "允许快速设置焦点";
@@ -91,6 +93,7 @@ else
 	DecorateTooltip = "鑰石助手"
 	CrucibleWeight = "熔炉圣物比较"
 	DW_OrderHallCommandBar = "隐藏职业大厅命令条"
+	MTG_TOGGLE = "魚人兌換"
 end
 
 --if (dwIsConfigurableAddOn("MapNotes") or dwIsConfigurableAddOn("Love") or dwIsConfigurableAddOn("FriendsMenuXP") or GetLocale() == "zhTW") then
@@ -469,6 +472,21 @@ do
 				KeystoneHelperToggle = true
 			else
 				KeystoneHelperToggle = false
+			end
+		end		
+	);
+	
+	dwRegisterCheckButton(
+		"LoveMod",
+		MTG_TOGGLE,
+		nil,
+		"j_toggle",
+		1,
+		function (arg)
+			if(arg==1)then
+				j_toggle = true
+			else
+				j_toggle = false
 			end
 		end		
 	);

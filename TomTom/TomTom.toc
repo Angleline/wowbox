@@ -5,7 +5,7 @@
 ## Title-zhTW: [多玩] 導航助手TomTom
 ## Notes-zhTW: 一箇簡單的導航助手
 ## Author: jnwhiteh
-## Version: v80105-1.0.2
+## Version: v80200-1.0.4
 ## License: All Rights Reserved
 ## Notes: Acts as your portable navigation assistant
 ## Notes-zhCN:一个简单的导航助手。

@@ -6,25 +6,30 @@
 L = DBM:GetModLocalization("Battlegrounds")
 
 L:SetGeneralLocalization({
-	name = "General Options"
+	name	= "General Options"
 })
 
-
 L:SetTimerLocalization({
-	TimerInvite = "%s"
+	TimerInvite		= "%s",
+	TimerRemaining	= "Time Remaining: "
 })
 
 L:SetOptionLocalization({
-	ColorByClass	= "Set name color to class color in the score frame",
-	ShowInviteTimer	= "Show battleground join timer",
-	AutoSpirit		= "Auto-release spirit",
-	HideBossEmoteFrame	= "Hide the raid boss emote frame & garrison/Guild toasts during battlegrounds"
+	ColorByClass		= "Set name color to class color in the score frame",
+	ShowInviteTimer		= "Show battleground join timer",
+	AutoSpirit			= "Auto-release spirit",
+	HideBossEmoteFrame	= "Hide the raid boss emote frame & garrison/Guild toasts during battlegrounds",
+	TimerWin			= "Show win timer",
+	ShowEstimatedPoints	= "Show estimated points on win/loss",
+	ShowBasesToWin		= "Show bases required to win"
 })
 
 L:SetMiscLocalization({
-	BgStart60 	= "The battle begins in 1 minute.",
-	BgStart30 	= "The battle begins in 30 seconds.  Prepare yourselves!",
-	ArenaInvite	= "Arena invite"
+	ArenaInvite	= "Arena invite",
+	WinBarText	= "%s wins",
+	-- TODO: Standardise these two locales
+	BasesToWin	= "Bases to win: %d",
+	OrbsToWin	= "Orbs to win: %d"
 })
 
 --------------
@@ -33,7 +38,7 @@ L:SetMiscLocalization({
 L = DBM:GetModLocalization("Arenas")
 
 L:SetGeneralLocalization({
-	name = "Arenas"
+	name	= "Arenas"
 })
 
 L:SetTimerLocalization({
@@ -41,12 +46,12 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
-	TimerShadow = "Show timer for Shadow Sight"
+	TimerShadow	= "Show timer for Shadow Sight"
 })
 
 L:SetMiscLocalization({
-	Start15	= "Fifteen seconds until the Arena battle begins!",
-	highmaulArena = "The battle for supremacy begins in 30 seconds!"
+	Start15			= "Fifteen seconds until the Arena battle begins!",
+	highmaulArena	= "The battle for supremacy begins in 30 seconds!"
 })
 
 ----------------------
@@ -75,16 +80,7 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
-	TimerWin				= "Show win timer",
-	TimerCap				= "Show capture timer",
-	ShowAbEstimatedPoints	= "Show estimated points on win/loss",
-	ShowAbBasesToWin		= "Show bases required to win"
-})
-
-L:SetMiscLocalization({
-	ScoreExpr	= "(%d+)/1500",
-	WinBarText	= "%s wins",
-	BasesToWin	= "Bases to win: %d"
+	TimerCap				= "Show capture timer"
 })
 
 ---------------------
@@ -93,17 +89,11 @@ L:SetMiscLocalization({
 L = DBM:GetModLocalization("z1105")
 
 L:SetTimerLocalization({
-       TimerCap        = "%s"
+	TimerCap	= "%s"
 })
 
 L:SetOptionLocalization({
-       TimerCap        = "Show capture timer",
-       TimerWin        = "Show win timer"
-})
-
-L:SetMiscLocalization({
-       ScoreExpr       = "(%d+)/1500",
-       WinBarText      = "%s wins"
+	TimerWin	= "Show win timer"
 })
 
 ------------------------
@@ -116,17 +106,14 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
-	TimerWin 		= "Show win timer",
-	TimerFlag 		= "Show flag respawn timer",
+	TimerFlag		= "Show flag respawn timer",
 	ShowPointFrame	= "Show flag carrier and estimated points"
 })
 
 L:SetMiscLocalization({
-	ScoreExpr		= "(%d+)/1500",
-	WinBarText 		= "%s wins",
 	Flag			= "Flag",
-	FlagReset 		= "The flag has been reset!",
-	FlagTaken 		= "(.+) has taken the flag!",
+	FlagReset		= "The flag has been reset!",
+	FlagTaken		= "(.+) has taken the flag!",
 	FlagCaptured	= "The .+ ha%w+ captured the flag!",
 	FlagDropped		= "The flag has been dropped!"
 })
@@ -134,15 +121,13 @@ L:SetMiscLocalization({
 ---------------------
 --  Warsong Gulch  --
 ---------------------
-L = DBM:GetModLocalization("z489")
+L = DBM:GetModLocalization("z2106")
 
 L:SetTimerLocalization({
-	TimerStart	= "Game starts",
 	TimerFlag	= "Flag respawn"
 })
 
 L:SetOptionLocalization({
-	TimerStart					= "Show start timer",
 	TimerFlag					= "Show flag respawn timer",
 	ShowFlagCarrier				= "Show flag carrier",
 	ShowFlagCarrierErrorNote	= "Show flag carrier error message while in combat"
@@ -187,7 +172,7 @@ L:SetMiscLocalization({
 	GatesHealthFrame		= "Damaged gates",
 	SiegeEngine				= "Siege Engine",
 	GoblinStartAlliance		= "See those seaforium bombs? Use them on the gates while I repair the siege engine!",
-	GoblinStartHorde		= "I'll work on the siege engine, just watch my back.  Use those seaforium bombs on the gates if you need them!",
+	GoblinStartHorde		= "I'll work on the siege engine, just watch my back. Use those seaforium bombs on the gates if you need them!",
 	GoblinHalfwayAlliance	= "I'm halfway there! Keep the Horde away from here.  They don't teach fighting in engineering school!",
 	GoblinHalfwayHorde		= "I'm about halfway done! Keep the Alliance away - fighting's not in my contract!",
 	GoblinFinishedAlliance	= "My finest work so far! This siege engine is ready for action!",
@@ -202,12 +187,11 @@ L:SetMiscLocalization({
 L = DBM:GetModLocalization("z726")
 
 L:SetTimerLocalization({
-	TimerStart	= "Game starts",
-	TimerFlag	= "Flag respawn"
+	TimerStart		= "Game starts",
+	TimerFlag		= "Flag respawn"
 })
 
 L:SetOptionLocalization({
-	TimerStart					= "Show start timer",
 	TimerFlag					= "Show flag respawn timer",
 	ShowFlagCarrier				= "Show flag carrier",
 	ShowFlagCarrierErrorNote	= "Show flag carrier error message while in combat"
@@ -235,16 +219,7 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
-	TimerWin				= "Show win timer",
-	TimerCap				= "Show capture timer",
-	ShowGilneasEstimatedPoints		= "Show estimated points on win/loss",
-	ShowGilneasBasesToWin			= "Show bases required to win"
-})
-
-L:SetMiscLocalization({
-	ScoreExpr	= "(%d+)/1500",
-	WinBarText	= "%s wins",
-	BasesToWin	= "Bases to win: %d"
+	TimerCap	= "Show capture timer"
 })
 
 -------------------------
@@ -261,7 +236,7 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	Capture = "has captured"
+	Capture	= "has captured"
 })
 
 -------------------------
@@ -269,16 +244,7 @@ L:SetMiscLocalization({
 -------------------------
 L = DBM:GetModLocalization("z998")
 
-L:SetOptionLocalization({
-	TimerWin			= "Show win timer",
-	ShowKotmoguEstimatedPoints	= "Show estimated points on win/loss",
-	ShowKotmoguOrbsToWin		= "Show orbs required to win"
-})
-
 L:SetMiscLocalization({
-	OrbTaken 	= "(%S+) has taken the (%S+) orb!",
-	OrbReturn 	= "The (%S+) orb has been returned!",
-	ScoreExpr	= "(%d+)/1500",
-	WinBarText	= "Estimate %s wins",
-	OrbsToWin	= "Orbs to win: %d"
+	OrbTaken	= "(%S+) has taken the (%S+) orb!",
+	OrbReturn	= "The (%S+) orb has been returned!"
 })

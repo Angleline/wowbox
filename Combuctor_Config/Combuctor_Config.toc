@@ -11,7 +11,7 @@
 ## Dependencies: Duowan
 ## X-Revision: Duowan
 ## LoadOnDemand: 1
-## Version: 8.1.0
+## Version: 8.2.0
 
 main.lua
 common\Wildpants_Config.xml

@@ -174,12 +174,13 @@ end
 
 function mod:OnEnable()
 	sm.core:RegisterModuleOptions("ZoneText", options, L["Zone Text"])
+
 	if dwRawGetCVar("DuowanConfig", "IsNewSimpleMode", false) then
 		SexyMap_ToggleZoneText(v)
 		return;
 	end
 	MinimapZoneText:ClearAllPoints()
-	MinimapZoneText:SetAllPoints()
+	MinimapZoneText:SetAllPoints(MinimapZoneTextButton)
 	MinimapZoneTextButton:SetHeight(26)
 	MinimapZoneTextButton:SetBackdrop(sm.backdrop)
 	MinimapZoneTextButton:SetFrameStrata("MEDIUM")
@@ -191,7 +192,6 @@ end
 
 function mod:UpdateLayout()
 	MinimapZoneTextButton:ClearAllPoints()
-	MinimapZoneTextButton:SetParent(Minimap)
 	MinimapZoneTextButton:SetPoint("BOTTOM", Minimap, "TOP", mod.db.xOffset, mod.db.yOffset)
 	MinimapZoneTextButton:SetBackdropColor(mod.db.bgColor.r, mod.db.bgColor.g, mod.db.bgColor.b, mod.db.bgColor.a)
 	MinimapZoneTextButton:SetBackdropBorderColor(mod.db.borderColor.r, mod.db.borderColor.g, mod.db.borderColor.b, mod.db.borderColor.a)
@@ -209,6 +209,7 @@ function mod:ZoneChanged()
 		MinimapZoneText:SetTextColor(mod.db.fontColor.r, mod.db.fontColor.g, mod.db.fontColor.b, mod.db.fontColor.a)
 	end
 end
+
 
 function SexyMap_ToggleZoneText(v)
 	if (v) then

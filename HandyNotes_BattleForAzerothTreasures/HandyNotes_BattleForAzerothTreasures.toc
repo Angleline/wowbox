@@ -4,7 +4,7 @@
 ## Title-zhTW: [多玩] 地圖標記-BfA宝藏模块
 ## Notes: Where are the hidden treasures in Battle For Azeroth?
 ## Author: Kemayo
-## Version: v7
+## Version: v7-25
 ## DefaultState: enabled
 ## X-Category: Map
 ## X-eMail: kemayo @ gmail DOT com

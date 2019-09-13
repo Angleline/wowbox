@@ -156,6 +156,7 @@ WorldQuestTracker.OnMapHasChanged = function (self)
 		WorldQuestTracker.WorldMap_GoldIndicator.text = 0
 		WorldQuestTracker.WorldMap_ResourceIndicator.text = 0
 		WorldQuestTracker.WorldMap_APowerIndicator.text = 0
+		WorldQuestTracker.WorldMap_PetIndicator.text = 0
 	end
 
 	--> clear custom map pins
@@ -520,7 +521,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 				
 				local f = DF:CreateSimplePanel (UIParent, 460, 90, "Discord Server", "WorldQuestTrackerSharePanel")
 				f:SetFrameStrata ("TOOLTIP")
-				f:SetPoint ("center", WorldMapScrollFrame, "center")
+				f:SetPoint ("center", UIParent, "center", 0, 0)
 				
 				DF:CreateBorder (f)
 				
@@ -553,7 +554,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 				
 					local f = DF:CreateSimplePanel (UIParent, config.scroll_width + 30, config.scroll_height + 30, "World Quest Tracker Quest Blacklist", "WorldQuestTrackerBanPanel")
 					f:SetFrameStrata ("DIALOG")
-					f:SetPoint ("center", WorldMapScrollFrame, "center")
+					f:SetPoint ("center", UIParent, "center")
 					
 					DF:CreateBorder (f)
 					
@@ -1028,11 +1029,26 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 					return
 				end
 				
-				if (option == "show_summary_minimize_button") then
-					WorldQuestTracker.db.profile.show_summary_minimize_button = value
+				if (option == "emissary_quest_info") then 
+					WorldQuestTracker.db.profile.show_emissary_info = value
+					GameCooltip:Hide()
 					if (WorldQuestTrackerAddon.GetCurrentZoneType() == "zone") then
 						WorldQuestTracker.UpdateZoneSummaryFrame()
 					end
+					return
+				end
+
+				if (option == "show_summary_minimize_button") then
+					WorldQuestTracker.db.profile.show_summary_minimize_button = value
+					
+					if (WorldQuestTrackerAddon.GetCurrentZoneType() == "zone") then
+						WorldQuestTracker.UpdateZoneSummaryFrame()
+					end
+					if (WorldQuestTrackerAddon.GetCurrentZoneType() == "world") then
+						WorldQuestTracker.UpdateWorldQuestsOnWorldMap()
+					end
+					
+					WorldQuestTracker.ForceRefreshBountyBoard()
 					
 					GameCooltip:Hide()
 					return
@@ -1372,6 +1388,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			worldSummary.TotalGold = 0
 			worldSummary.TotalResources = 0
 			worldSummary.TotalAPower = 0
+			worldSummary.TotalPet = 0
 			worldSummary.FactionSelected = 1 
 			worldSummary.FactionSelected_OnInit = 6 --the index 6 is the tortollan faction which has less quests and add less noise
 			worldSummary.AnchorAmount = 7
@@ -2285,6 +2302,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 				worldSummary.TotalGold = 0
 				worldSummary.TotalResources = 0
 				worldSummary.TotalAPower = 0
+				worldSummary.TotalPet = 0
 
 				for _, anchor in pairs (worldSummary.Anchors) do
 					anchor:Hide()
@@ -2370,6 +2388,10 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 					if (resource) then worldSummary.TotalResources = worldSummary.TotalResources + resource end
 					if (apower) then worldSummary.TotalAPower = worldSummary.TotalAPower + apower end
 					
+					if (worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE) then
+						worldSummary.TotalPet = worldSummary.TotalPet + 1
+					end
+					
 					if (WorldQuestTracker.WorldMap_GoldIndicator) then
 						WorldQuestTracker.WorldMap_GoldIndicator.text = floor (worldSummary.TotalGold / 10000)
 						
@@ -2386,6 +2408,8 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 						end
 						
 						WorldQuestTracker.WorldMap_APowerIndicator.Amount = worldSummary.TotalAPower
+
+						WorldQuestTracker.WorldMap_PetIndicator.text = worldSummary.TotalPet
 					end
 
 					if (WorldQuestTracker.db.profile.show_timeleft) then
@@ -3320,16 +3344,16 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 				
 				GameCooltip:AddLine ("$div")
 				
-				--[=[ --this is deprecated at the moment, but might be needed again in the future
+				--[= --this is deprecated at the moment, but might be needed again in the future
 				if (WorldQuestTracker.db.profile.filter_force_show_brokenshore) then
-					GameCooltip:AddLine ("Ignore Argus")
-					GameCooltip:AddLine ("World quets on Argus map will always be shown.", "", 2)
+					GameCooltip:AddLine ("Ignore New Zones", "", 1, "orange")
+					GameCooltip:AddLine ("World quets on new zones will always be shown.\n\nCurrent new zones:\n-Najatar\n-Machagon.", "", 2)
 					GameCooltip:AddIcon ([[Interface\ICONS\70_inscription_vantus_rune_tomb]], 1, 1, 23*.54, 37*.40, 0, 1, 0, 1)
 					GameCooltip:AddIcon ([[Interface\BUTTONS\UI-CheckBox-Check]], 1, 2, 16, 16, 0, 1, 0, 1, overlayColor, nil, true)
 				else
-					GameCooltip:AddLine ("Ignore Argus", "", 1, "silver")
-					GameCooltip:AddLine ("World quets on Argus map will always be shown.", "", 2)
-					GameCooltip:AddIcon (WQT_GENERAL_STRINGS_AND_ICONS.criteria.icon, 1, 1, 23*.54, 37*.40, l, r, t, b, nil, nil, true)
+					GameCooltip:AddLine ("Ignore New Zones", "", 1, "silver")
+					GameCooltip:AddLine ("World quets on new zones will always be shown.\n\nCurrent new zones:\n-Najatar\n-Machagon", "", 2)
+					--GameCooltip:AddIcon ([[Interface\ICONS\70_inscription_vantus_rune_tomb]], 1, 1, 23*.54, 37*.40, l, r, t, b, nil, nil, true)
 				end
 				GameCooltip:AddMenu (1, toggle_brokenshore_bypass)
 				--]=]
@@ -4051,6 +4075,11 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 				add_checkmark_icon (WorldQuestTracker.db.profile.bar_visible, true)
 				GameCooltip:AddMenu (1, options_on_click, "bar_visible", not WorldQuestTracker.db.profile.bar_visible)
 				
+				--show emissary quest info
+				GameCooltip:AddLine ("Emissary Quest Info")
+				add_checkmark_icon (WorldQuestTracker.db.profile.show_emissary_info, true)
+				GameCooltip:AddMenu (1, options_on_click, "emissary_quest_info", not WorldQuestTracker.db.profile.show_emissary_info)
+				
 				-- frame scale and frame align options
 				GameCooltip:AddLine ("$div")
 				--
@@ -4197,7 +4226,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			GameCooltip:CoolTipInject (WorldQuestTracker.OptionsInterfaceMenu.options_button)			
 			
 			local ResourceFontTemplate = DF:GetTemplate ("font", "WQT_RESOURCES_AVAILABLE")	
-
+			
 			--> party members ~party
 			
 		-----------
@@ -4212,6 +4241,9 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			
 			local resource_APowerFrame = CreateFrame ("button", nil, WorldQuestTracker.DoubleTapFrame)
 			resource_APowerFrame.QuestType = WQT_QUESTTYPE_APOWER
+			
+			local resource_PetFrame = CreateFrame ("button", nil, WorldQuestTracker.DoubleTapFrame)
+			resource_PetFrame.QuestType = WQT_QUESTTYPE_PETBATTLE
 			
 			-- ~resources ~recursos
 			local resource_GoldIcon = DF:CreateImage (resource_GoldFrame, [[Interface\AddOns\WorldQuestTracker\media\icons_resourcesT]], 16, 16, "overlay", {64/128, 96/128, 0, .25})
@@ -4228,6 +4260,11 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			resource_APowerIcon:SetDrawLayer ("overlay", 7)
 			resource_APowerIcon:SetAlpha (.78)
 			local resource_APowerText = DF:CreateLabel (resource_APowerFrame, "", ResourceFontTemplate)
+			
+			local resource_PetIcon = DF:CreateImage (resource_PetFrame, WorldQuestTracker.MapData.QuestTypeIcons [WQT_QUESTTYPE_PETBATTLE].icon, 16, 16, "overlay", {0.05, 0.95, 0.05, 0.95})
+			resource_PetIcon:SetDrawLayer ("overlay", 7)
+			resource_PetIcon:SetAlpha (.78)
+			local resource_PetText = DF:CreateLabel (resource_PetFrame, "", ResourceFontTemplate)
 		
 			--resource_APowerText:SetPoint ("bottomright", WorldQuestButton, "bottomleft", -10, 2)
 			--resource_APowerText:SetPoint ("bottomright", AllianceWorldQuestButton, "bottomleft", -10, 3)
@@ -4238,11 +4275,18 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			resource_ResourcesIcon:SetPoint ("right", resource_ResourcesText, "left", -2, 0)
 			resource_GoldText:SetPoint ("right", resource_ResourcesIcon, "left", -10, 0)
 			resource_GoldIcon:SetPoint ("right", resource_GoldText, "left", -2, 0)
+			
+			resource_PetText:SetPoint ("right", resource_GoldIcon, "left", -2, 0)
+			resource_PetIcon:SetPoint ("right", resource_PetText, "left", -2, 0)
+			
+			resource_PetText.text = 996
+			
 
 			WorldQuestTracker.IndicatorsAnchor = resource_APowerText
 			WorldQuestTracker.WorldMap_GoldIndicator = resource_GoldText
 			WorldQuestTracker.WorldMap_ResourceIndicator = resource_ResourcesText
 			WorldQuestTracker.WorldMap_APowerIndicator = resource_APowerText
+			WorldQuestTracker.WorldMap_PetIndicator = resource_PetText
 			
 			local track_all_quests_thread = function (tickerObject)
 				local questsToTrack = tickerObject.questsToTrack
@@ -4311,6 +4355,9 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 					elseif (qType == "apower") then
 						qType = QUESTTYPE_ARTIFACTPOWER
 						
+					elseif (qType == "petbattle") then
+						qType = QUESTTYPE_PET
+						
 					end
 					
 					local widgets = WorldQuestTracker.Cache_ShownWidgetsOnZoneMap
@@ -4340,10 +4387,15 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 						local qType = self.QuestType
 						if (qType == "gold") then
 							qType = QUESTTYPE_GOLD
+							
 						elseif (qType == "resource") then
 							qType = QUESTTYPE_RESOURCE
+							
 						elseif (qType == "apower") then
 							qType = QUESTTYPE_ARTIFACTPOWER
+							
+						elseif (qType == "petbattle") then
+							qType = QUESTTYPE_PET
 						end
 					
 						for _, widget in pairs (WorldQuestTracker.WorldMapSmallWidgets) do
@@ -4392,6 +4444,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			resource_GoldFrame:SetScript ("OnClick", TrackAllFromType)
 			resource_ResourcesFrame:SetScript ("OnClick", TrackAllFromType)
 			resource_APowerFrame:SetScript ("OnClick", TrackAllFromType)
+			resource_PetFrame:SetScript ("OnClick", TrackAllFromType)
 			
 			--animations
 			local animaSettings = {
@@ -4427,6 +4480,16 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 				local anim = WorldQuestTracker:CreateAnimation (resource_APowerFrame.OnLeaveAnimation, "Scale", 2, animaSettings.speed, animaSettings.scaleMax, animaSettings.scaleMax, 1, 1, "center", 0, 0)
 				anim:SetSmoothing ("OUT")
 			end
+				--
+			do
+				resource_PetFrame.OnEnterAnimation = DF:CreateAnimationHub (resource_PetFrame, function() end, function() end)
+				local anim = WorldQuestTracker:CreateAnimation (resource_PetFrame.OnEnterAnimation, "Scale", 1, animaSettings.speed, 1, 1, animaSettings.scaleMax, animaSettings.scaleMax, "center", 0, 0)
+				anim:SetEndDelay (60) --this fixes the animation going back to 1 after it finishes
+				anim:SetSmoothing ("IN")
+				resource_PetFrame.OnLeaveAnimation = DF:CreateAnimationHub (resource_PetFrame, function() end, function() end)
+				local anim = WorldQuestTracker:CreateAnimation (resource_PetFrame.OnLeaveAnimation, "Scale", 2, animaSettings.speed, animaSettings.scaleMax, animaSettings.scaleMax, 1, 1, "center", 0, 0)
+				anim:SetSmoothing ("OUT")
+			end
 			
 			--this function is called when the mouse enters the indicator area, here it handles only the animation
 			local indicatorsAnimationOnEnter = function (self, questType)
@@ -4443,6 +4506,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 				local mapType = WorldQuestTrackerAddon.GetCurrentZoneType()
 
 				if (mapType == "world") then
+					
 					for _, widget in ipairs (WorldQuestTracker.WorldSummaryQuestsSquares) do
 						if (widget.QuestType == questType and widget:IsShown()) then
 							widget.LoopFlash:Play()
@@ -4512,13 +4576,21 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			shadow:SetSize (58, 10)
 			shadow:SetAlpha (.3)
 			
+			local shadow = WorldQuestTracker.DoubleTapFrame:CreateTexture (nil, "background")
+			shadow:SetPoint ("left", resource_PetIcon.widget, "left", 2, 0)
+			shadow:SetTexture ([[Interface\AddOns\WorldQuestTracker\media\background_blackgradientT]])
+			shadow:SetSize (58, 10)
+			shadow:SetAlpha (.3)
+			
 			resource_GoldFrame:SetSize (55, 20)
 			resource_ResourcesFrame:SetSize (55, 20)
 			resource_APowerFrame:SetSize (55, 20)
+			resource_PetFrame:SetSize (55, 20)
 			
 			resource_GoldFrame:SetPoint ("left", resource_GoldIcon.widget, "left", -2, 0)
 			resource_ResourcesFrame:SetPoint ("left", resource_ResourcesIcon.widget, "left", -2, 0)
 			resource_APowerFrame:SetPoint ("left", resource_APowerIcon.widget, "left", -2, 0)
+			resource_PetFrame:SetPoint ("left", resource_PetIcon.widget, "left", -2, 0)
 			
 			resource_GoldFrame:SetScript ("OnEnter", function (self)
 				resource_GoldText.textcolor = "WQT_ORANGE_ON_ENTER"
@@ -4617,11 +4689,45 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 				GameCooltip:Show(self)
 			end)
 			
+			resource_PetFrame:SetScript ("OnEnter", function (self)
+				resource_PetText.textcolor = "WQT_ORANGE_ON_ENTER"
+				
+				indicatorsAnimationOnEnter (self, QUESTTYPE_PET)
+				
+				GameCooltip:Preset (2)
+				GameCooltip:SetType ("tooltipbar")
+				GameCooltip:SetOption ("TextSize", 10)
+				GameCooltip:SetOption ("FixedWidth", 220)
+				GameCooltip:SetOption ("StatusBarTexture", [[Interface\RaidFrame\Raid-Bar-Hp-Fill]])
+				
+				if (WorldQuestTracker.db.profile.bar_anchor == "top") then
+					GameCooltip:SetOption ("MyAnchor", "top")
+					GameCooltip:SetOption ("RelativeAnchor", "bottom")
+					GameCooltip:SetOption ("WidthAnchorMod", 0)
+					GameCooltip:SetOption ("HeightAnchorMod", -29)
+				else
+					GameCooltip:SetOption ("MyAnchor", "bottom")
+					GameCooltip:SetOption ("RelativeAnchor", "top")
+					GameCooltip:SetOption ("WidthAnchorMod", 0)
+					GameCooltip:SetOption ("HeightAnchorMod", 0)
+				end
+				
+				GameCooltip:AddLine ("Pet Battle")
+				GameCooltip:AddIcon (WorldQuestTracker.MapData.QuestTypeIcons [WQT_QUESTTYPE_PETBATTLE].icon, 1, 1, 20, 20)
+
+				GameCooltip:AddLine ("", "", 1, "green", _, 10)
+				GameCooltip:AddLine (format (L["S_MAPBAR_RESOURCES_TOOLTIP_TRACKALL"], "Pet Battles"), "", 1, "green", _, 10)
+				GameCooltip:SetOption ("LeftTextHeight", 22)
+				GameCooltip:SetOwner (self)
+				GameCooltip:Show(self)
+			end)
+			
 			local resource_IconsOnLeave = function (self)
 				GameCooltip:Hide()
 				resource_GoldText.textcolor = "WQT_ORANGE_RESOURCES_AVAILABLE"
 				resource_ResourcesText.textcolor = "WQT_ORANGE_RESOURCES_AVAILABLE"
 				resource_APowerText.textcolor = "WQT_ORANGE_RESOURCES_AVAILABLE"
+				resource_PetText.textcolor = "WQT_ORANGE_RESOURCES_AVAILABLE"
 				
 				indicatorsAnimationOnLeave (self)
 			end
@@ -4629,6 +4735,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			resource_GoldFrame:SetScript ("OnLeave", resource_IconsOnLeave)
 			resource_ResourcesFrame:SetScript ("OnLeave", resource_IconsOnLeave)
 			resource_APowerFrame:SetScript ("OnLeave", resource_IconsOnLeave)
+			resource_PetFrame:SetScript ("OnLeave", resource_IconsOnLeave)
 			
 			--------------
 			
@@ -4733,7 +4840,6 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 	if (not WorldMapFrame.isMaximized) then
 		WorldQuestTracker.UpdateWorldMapFrameAnchor()
 	end
-
 	
 	-- ~frame scale
 	if (WorldQuestTracker.db.profile.map_frame_scale_enabled) then

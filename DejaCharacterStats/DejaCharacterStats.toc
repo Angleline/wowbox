@@ -1,5 +1,5 @@
 ﻿## Interface: 80200
-## Version: 800b122
+## Version: 820r201
 ## Title: DejaCharacterStats
 ## Title-zhCN: [多玩] Deja 角色详细属性
 ## Notes-zhCN: 在角色面板上显示详细的属性，类似旧版，/dcstats config:打开配置界面。

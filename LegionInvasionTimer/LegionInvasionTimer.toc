@@ -1,5 +1,5 @@
 ## Interface: 80200
-## Version: v8.2.2
+## Version: v8.2.4
 ## Title: LegionInvasionTimer
 ## Title-zhCN: 军团入侵计时器
 ## Title-zhTW: 軍團入侵計時器

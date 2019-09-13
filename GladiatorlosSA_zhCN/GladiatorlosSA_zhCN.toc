@@ -4,7 +4,7 @@
 ## Title-zhTW:GSA2_桃桃语音包
 ## Notes: GSA plugin for Chinese voice set
 ## Author: TaoTao
-## Version: 20190318
+## Version: 20190627
 ## X-DuowanAddon: PvP
 ## Dependencies: Duowan
 ## X-Revision: Duowan

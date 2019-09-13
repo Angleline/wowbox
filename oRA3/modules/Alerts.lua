@@ -80,6 +80,7 @@ combatLogMap.SPELL_CAST_SUCCESS = {
 	[178207] = "Bloodlust", -- Drums of Fury (WoD)
 	[230935] = "Bloodlust", -- Drums of the Mountain (Legion)
 	[256740] = "Bloodlust", -- Drums of the Maelstrom (BfA)
+	[292686] = "Bloodlust", -- Mallet of Thunderous Skins (BfA)
 }
 combatLogMap.SPELL_AURA_APPLIED = {
 	-- Taunts
@@ -128,10 +129,12 @@ combatLogMap.SPELL_CREATE = {
 	[259409] = "Feast", -- Galley Banquet (+75)
 	[259410] = "Feast", -- Bountiful Captain's Feast (+100)
 	[286050] = "Feast", -- Sanguinated Feast (+100)
+	[297048] = "Feast", -- Famine Evaluator And Snack Table (+131)
 	-- Instant Rituals
 	[29893] = "Feast", -- Create Soulwell (Warlock)
 	[190336] = "Feast", -- Conjure Refreshment (Mage)
 	[276972] = "Feast", -- Mystical Cauldron
+	[298861] = "Feast", -- Greater Mystical Cauldron
 }
 combatLogMap.SPELL_RESURRECT = {
 	["*"] = "Resurrect",
@@ -241,7 +244,7 @@ combatLogMap.SPELL_SUMMON = {
 	-- Reaves
 	[200205] = "Repair", -- Auto-Hammer Mode
 	[200211] = "Reincarnation", -- Failure Detection Mode
-	[200216] = "Feast", -- Snack Distribution Mode (+225 versatility)
+	[200216] = "Feast", -- Snack Distribution Mode (+10 versatility)
 }
 
 -- cache pet owner names
@@ -322,7 +325,7 @@ function module:Spam(key, msg)
 	end
 
 	if output == "self" or (self.db.profile.fallback and fallback) then
-		chatframe:AddMessage(("|Hora:%s|h|cff33ff99oRA3|r|h: %s"):format(chatMsg:gsub("|", "@"), msg))
+		chatframe:AddMessage(("|Hgarrmission:oRA:%s|h|cff33ff99oRA3|r|h: %s"):format(chatMsg:gsub("|", "@"), msg))
 	end
 end
 
@@ -812,8 +815,8 @@ function module:OnRegister()
 
 	-- Enable shift-clicking the line to print in chat.
 	hooksecurefunc("SetItemRef", function(link)
-		if strsub(link, 1, 3) == "ora" and IsModifiedClick("CHATLINK") then
-			local _, msg = strsplit(":", link, 2)
+		local _, ora, msg = strsplit(":", link, 3)
+		if ora == "oRA" and IsShiftKeyDown() then
 			msg = msg:gsub("@", "|")
 			local editBox = _G.ChatEdit_ChooseBoxForSend()
 			_G.ChatEdit_ActivateChat(editBox)
@@ -830,7 +833,7 @@ function module:OnEnable()
 end
 
 function module:PLAYER_ENTERING_WORLD()
-	wipe(petOwnerMap) -- clear out the cache every now and again
+	petOwnerMap = {} -- clear out the cache every now and again
 	UpdatePets()
 end
 

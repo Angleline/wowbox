@@ -10,7 +10,7 @@
 ## Dependencies: Duowan
 ## X-Revision: Duowan
 ## LoadOnDemand: 
-## SavedVariables: CrucibleWeightDB, EasyObliterate_Data, LoveDB, ezIconsDB, FlashTaskbarDB, ACHIEVEMENTSEARCH_DB, TalentSetManager_Options, ArtifactPowerUserDB
+## SavedVariables: CrucibleWeightDB, EasyObliterate_Data, LoveDB, ezIconsDB, FlashTaskbarDB, ACHIEVEMENTSEARCH_DB, TalentSetManager_Options, ArtifactPowerUserDB,MTGDB,j_toggle,j_BuyRareItemOption,j_BuyItemOption,j_Markersize,j_CheckTacoFirst
 ## SavedVariablesPerCharacter: TalentSetManager_Saves, EasyObliterate_IgnoreList, NomiCakesDatas, ArtifactPowerUserCharacterDB
 
 locale\localization.xml
@@ -46,3 +46,6 @@ CloseUp.lua
 
 LootHistoryFix\ButtonLevels.lua
 LootHistoryFix\LootAssignment.lua
+
+UIWidget.lua
+MTG.lua

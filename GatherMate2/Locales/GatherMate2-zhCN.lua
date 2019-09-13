@@ -6,7 +6,6 @@ local L = LibStub("AceLocale-3.0"):NewLocale("GatherMate2", "zhCN")
 if not L then return end
 
 -- Options
-L["GatherMate2"] = "采集助手"
 L["Add this location to Cartographer_Waypoints"] = "将该地点加入 Cartographer_Waypoints"
 L["Add this location to TomTom waypoints"] = "将该地点加入 TomTom 节点"
 L["Always show"] = "总是显示"
@@ -561,5 +560,4 @@ NL["Wintersbite"] = "冬刺草"
 NL["Withered Herb"] = "枯萎的草药"
 NL["Zandalari Archaeology Find"] = "赞达拉考古发现"
 NL["Zin'anthid"] = "龙眼珊瑚"
-NL["Osmenite Deposit"] = "透金矿脉"
-NL["Osmenite Seam"] = "透金矿层"
+

@@ -220,8 +220,8 @@ local function Frame_Tooltip(self)
 	if self.name then
 		GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT")
 		local unit = self:GetParent().player
-		for i = 1, 40 do
-			local name = UnitBuff(unit, i)
+		for i = 1, 100 do
+			local name = UnitAura(unit, i, "HELPFUL")
 			if not name then
 				GameTooltip:SetText(self.name) -- we're out of sync
 				break
@@ -926,7 +926,6 @@ end
 function module:OnRegister()
 	self.db = oRA.db:RegisterNamespace("ReadyCheck", defaults)
 	oRA:RegisterModuleOptions("ReadyCheck", options)
-	self.db.profile.gui = nil -- XXX temp cleanup
 end
 
 function module:OnEnable()

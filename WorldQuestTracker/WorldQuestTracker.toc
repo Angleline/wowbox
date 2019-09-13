@@ -7,7 +7,7 @@
 ## SavedVariablesPerCharacter: WQTrackerDBChr
 ## Dependencies: Duowan
 ## X-Revision: Duowan
-## Version: v8.2.0.375
+## Version: v8.2.0.381
 ## LoadOnDemand: 1
 ## X-DuowanAddon: 任务
 

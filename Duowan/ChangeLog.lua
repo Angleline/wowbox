@@ -36,6 +36,49 @@ end
 if (GetLocale() == "zhCN") then
 	HTML_BEGIN();
 		HTML_TITLE("更新日志:");
+		HTML_VER("2019-08-20(8.2.1.1)");
+		HTML_LOG("团队助手", "更新DBM和旧模块");
+		HTML_LOG("任务增强", "世界任务追踪插件更新支持新地图");
+		HTML_LOG("地图增强", "更新地图增强插件Mapster");
+		HTML_LOG("地图增强", "BfA宝藏模块更新");
+		HTML_LOG("任务指示", "任务指示数据库更新");
+		HTML_LOG("整合背包", "更新新版");
+
+		HTML_VER("2019-08-13(8.2.1.0)");
+		HTML_LOG("团队助手", "更新DBM和PVP模块");
+		HTML_LOG("多玩界面", "更新采集助手");
+		HTML_LOG("按键配置", "增加强制导入功能");
+
+		HTML_VER("2019-08-07(8.2.0.9)");
+		HTML_LOG("团队助手", "更新DBM");
+		HTML_LOG("爱心工具", "鱼人兑换更新版");
+		HTML_LOG("多玩界面", "军团入侵计时器更新新版");
+		HTML_LOG("任务增强", "世界任务追踪插件更新");
+		HTML_LOG("多玩界面", "更新特质评分插件");
+		HTML_LOG("多玩界面", "Deja角色详细属性更新");
+		HTML_LOG("小地图增强", "更新新版");
+		HTML_LOG("团队助手", "oRA3更新新版");
+		HTML_LOG("伤害统计", "Recount更新");
+		HTML_LOG("稀有精英探测", "RareScanner插件更新");
+		HTML_LOG("一键驱散", "更新最新版");
+
+		HTML_VER("2019-07-30(8.2.0.8)");
+		HTML_LOG("团队助手", "更新DBM");
+		HTML_LOG("爱心工具", "鱼人兑换增加禁用开关");
+		HTML_LOG("任务增强", "TomTom导航助手更新");
+		HTML_LOG("稀有精英探测", "RareScanner插件更新");
+		HTML_LOG("多玩界面", "Deja角色详细属性更新");
+
+		HTML_VER("2019-07-23(8.2.0.7)");
+		HTML_LOG("团队助手", "更新DBM和旧副本模块");
+		HTML_LOG("任务增强", "世界任务追踪插件更新支持新地图");
+		HTML_LOG("地图增强", "BfA宝藏模块更新");
+		HTML_LOG("小地图增强", "更新新版");
+		HTML_LOG("团队助手", "oRA3更新新版");
+		HTML_LOG("竞技语音", "更新新版");
+		HTML_LOG("爱心工具", "增加鱼人兑换插件，感谢NGA网友wahtwhenwherewhowhy");
+		HTML_LOG("爱心工具", "增加地图组件框移动功能,ctrl+右键复位");
+
 		HTML_VER("2019-07-17(8.2.0.6)");
 		HTML_LOG("团队助手", "集合石更新,支持永恒王宫和麦卡贡行动");
 		HTML_LOG("多玩界面", "修正JJC页面鼠标无响应问题");

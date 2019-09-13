@@ -1,5 +1,5 @@
 ## Interface: 80200
-## Version: v8.2.0
+## Version: v8.2.2
 ## Title: [Duowan] SexyMap
 ## Notes: Spice up ye olde minimap with some sexytime options.
 ## Title-zhCN: [多玩] 小地图增强 SexyMap
@@ -9,7 +9,7 @@
 ## Author: Funkydude
 ## X-Credits: Antiarc (Former Author)
 ## OptionalDeps: Ace3, AceGUI-3.0-SharedMediaWidgets, LibSharedMedia-3.0, LibChatAnims, CallbackHandler-1.0, LibStub, Blizzard_TimeManager
-## SavedVariables: SexyMap2DB
+## SavedVariables: SexyMap2DB, SexyMap82
 
 ## X-DuowanAddon: 地图
 ## Dependencies: Duowan

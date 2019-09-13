@@ -5,7 +5,7 @@
 ## Notes: |cffbc8f8fMemory, restore, save, load your key settings.|r
 ## Notes-zhCN: |cff00ff00MySlot|r                                             |cffbc8f8f记忆、恢复、保存、载入您的按键设置。|r
 ## Notes-zhTW: |cff00ff00MySlot|r                                             |cffbc8f8f記憶、恢復、保存、載入您的按鍵設置。|r
-## Version: v5.2.6
+## Version: v5.2.8
 ## Author: tg123
 ## X-DuowanAddon: 界面聊天
 ## Dependencies: Duowan

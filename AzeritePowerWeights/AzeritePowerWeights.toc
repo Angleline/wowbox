@@ -4,7 +4,7 @@
 ## Title-zhCN: [多玩]特质评分AzeritePowerWeights
 ## Title-zhTW: [多玩]特質評分 AzeritePowerWeights
 ## X-Revision: Duowan
-## Version: 8.2.2
+## Version: 8.2.7
 ## Notes: Helps you pick the best Azerite powers on your gear for your class and spec.
 ## RequiredDeps:
 ## SavedVariables: AzeritePowerWeightsDB
